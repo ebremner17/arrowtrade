@@ -8,7 +8,7 @@ module.exports = (function () {
 
   var config = {
     sass:'./sass/*.{scss,sass}',
-    sassSrc:'./sass/impact.scss',
+    sassSrc:'./sass/arrowtrade.scss',
     sassIe:'./sass/ie.scss',
     sassPrint:'./sass/print.scss',
     css:'./css',
