@@ -37,7 +37,6 @@
       });
 
       function change_background_image() {
-        console.log('CHANGE');
 
         images = new Array('nature', 'nature2', 'nature3', 'nature4');
 
@@ -57,10 +56,10 @@
 
         $('.view-at-view-cover-page-slideshow').css('background-image', "url('" + image_url + "')");
 
-        setTimeout(change_background_image, 3000);
+        setTimeout(change_background_image, 6000);
       }
       // use setTimeout() to execute
-      setTimeout(change_background_image, 3000);
+      setTimeout(change_background_image, 6000);
     }
   };
 })(jQuery, Drupal);
