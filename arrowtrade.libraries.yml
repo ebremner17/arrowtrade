@@ -3,9 +3,11 @@ global-styling:
   css:
     theme:
       css/arrowtrade.css: {}
-  dependencies:
-    - core/jquery
-    - core/drupal.ajax
-    - core/drupal
-    - core/drupalSettings
-    - core/jquery.once
+slideshow:
+  version: 1.x
+  css:
+    theme:
+      slick/slick.css: {}
+  js:
+    slick/slick.js: {}
+    js/slideshow.js: {}
