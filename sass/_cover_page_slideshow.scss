@@ -1,6 +1,20 @@
 .view-at-view-cover-page-slideshow {
+
+  button {
+    outline: none;
+  }
+
   .view-content {
     background-color: #e5e5e5;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+  }
+
+  .view-content.slick-initialized {
+    visibility: visible;
+    opacity: 1;
   }
 
   .cover-page-issue {
@@ -11,5 +25,42 @@
       margin-left: auto;
       margin-right: auto
     }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 35%;
+    border: 0;
+    background: transparent;
+    height: 80px;
+    color: transparent;
+
+    a:hover {
+      outline: none;
+    }
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+  .slick-prev:before {
+    content: "<";
+    padding: 0 10px;
+    color: orange;
+    position: absolute;
+    font-size: 50px;
+    top: 0%;
+    left: 20%;
+  }
+
+  .slick-next:before {
+    content: ">";
+    padding: 0 10px;
+    color: orange;
+    position: absolute;
+    font-size: 50px;
+    top: 0%;
+    right: 20%;
   }
 }
