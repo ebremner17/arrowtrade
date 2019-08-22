@@ -52,7 +52,6 @@
         image_name = image_name.replace('.jpg', '');
 
         image_url = image_url.replace(image_name, new_image);
-        console.log(image_url);
 
         $('.view-at-view-cover-page-slideshow').css('background-image', "url('" + image_url + "')");
 

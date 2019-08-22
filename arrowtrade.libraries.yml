@@ -11,3 +11,9 @@ slideshow:
   js:
     slick/slick.min.js: {}
     js/slideshow.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
