@@ -1,9 +1,8 @@
 (function ($, Drupal) {
   Drupal.behaviors.slideshowBehavior = {
     attach: function (context, settings) {
-      console.log('HERE3333');
-      $('.your-class').slick({
-        slidesToShow: 2,
+      $('.view-at-view-cover-page-slideshow .view-content').slick({
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
