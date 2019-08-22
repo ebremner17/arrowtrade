@@ -26,7 +26,6 @@
     }
 
 }(function($) {
-    alert('HERE');
     'use strict';
     var Slick = window.Slick || {};
 

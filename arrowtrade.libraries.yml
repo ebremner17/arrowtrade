@@ -9,5 +9,5 @@ slideshow:
     theme:
       slick/slick.css: {}
   js:
-    slick/slick.js: {}
+    slick/slick.min.js: {}
     js/slideshow.js: {}
