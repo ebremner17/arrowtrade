@@ -1,6 +1,8 @@
 .view-at-view-cover-page-slideshow {
 
   background-image: url("../images/nature.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
   button {
     outline: none;

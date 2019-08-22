@@ -35,6 +35,32 @@
           // instead of a settings object
         ]
       });
+
+      function change_background_image() {
+        console.log('CHANGE');
+
+        images = new Array('nature', 'nature2', 'nature3', 'nature4');
+
+        var new_image = images[Math.floor(Math.random()*images.length)];
+
+        var image_url = $('.view-at-view-cover-page-slideshow').css('background-image');
+        image_url = image_url.replace('url("', '');
+        image_url = image_url.replace('url("', '');
+        image_url = image_url.replace('")', '');
+
+        image_url_parts = image_url.split('/');
+        image_name = image_url_parts[image_url_parts.length - 1];
+        image_name = image_name.replace('.jpg', '');
+
+        image_url = image_url.replace(image_name, new_image);
+        console.log(image_url);
+
+        $('.view-at-view-cover-page-slideshow').css('background-image', "url('" + image_url + "')");
+
+        setTimeout(change_background_image, 3000);
+      }
+      // use setTimeout() to execute
+      setTimeout(change_background_image, 3000);
     }
   };
 })(jQuery, Drupal);
