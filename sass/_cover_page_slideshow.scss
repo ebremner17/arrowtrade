@@ -7,7 +7,7 @@
   .view-content {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    background-color: #e5e5e5;
+    background-color: #757575;
     opacity: 0;
     visibility: hidden;
     transition: opacity 1s ease;
@@ -21,6 +21,12 @@
 
   .cover-page-issue {
     text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: "BureauGrotCond Book",impact,"avenir next condensed heavy","Droid Sans",sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: .5rem;
 
     img {
       display: block;
