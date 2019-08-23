@@ -36,6 +36,8 @@
         ]
       });
 
+      $('.view-at-view-cover-page-slideshow').css('opacity', '1');
+
       function change_background_image() {
 
         images = new Array('nature', 'nature2', 'nature3', 'nature4');
@@ -43,8 +45,9 @@
         var new_image = images[Math.floor(Math.random()*images.length)];
 
         var image_url = $('.view-at-view-cover-page-slideshow').css('background-image');
-        image_url = image_url.replace('url("', '');
-        image_url = image_url.replace('url("', '');
+
+        image_url = image_url.replace('linear-gradient(rgba(255, 255, 255, 0.5) 0px, rgba(255, 255, 255, 0.7) 100%), url("', '');
+        image_url = image_url.replace('linear-gradient(rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.7) 100%), url("', '');
         image_url = image_url.replace('")', '');
 
         image_url_parts = image_url.split('/');
@@ -53,7 +56,7 @@
 
         image_url = image_url.replace(image_name, new_image);
 
-        $('.view-at-view-cover-page-slideshow').css('background-image', "url('" + image_url + "')");
+        $('.view-at-view-cover-page-slideshow').css('background-image', 'linear-gradient(to bottom, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.7) 100%), url("' + image_url + '")');
 
         setTimeout(change_background_image, 6000);
       }
