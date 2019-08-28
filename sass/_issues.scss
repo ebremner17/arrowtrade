@@ -1,0 +1,54 @@
+.at-issue {
+
+  &--wrapper {
+    max-width: 63rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding-top: 0.5rem;
+    position: relative;
+  }
+
+  &--cover {
+    grid-row: 1 / 2;
+    grid-column: 1 /2;
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+
+    img {
+      padding: 2rem;
+    }
+  }
+
+  &--description {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    padding-left: 1rem;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  &--read-issue {
+    padding: 0.5rem;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      background: #eee;
+      color: #4e4e4e;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.60181rem;
+      font-family: "BureauGrotCond Book",impact,"avenir next condensed heavy","Droid Sans",sans-serif;
+      letter-spacing: .045rem;
+
+      &:hover {
+        background-color: white;
+      }
+    }
+  }
+}
