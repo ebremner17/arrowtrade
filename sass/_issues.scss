@@ -6,7 +6,8 @@
     margin-left: auto;
     display: grid;
     grid-template-columns: 30% 70%;
-    padding-top: 0.5rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
     position: relative;
   }
 
@@ -15,7 +16,7 @@
     grid-column: 1 /2;
     -moz-box-shadow:    3px 3px 5px 6px #ccc;
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow:         3px 3px 5px 6px #ccc;
+    box-shadow:         -3px 3px 5px 6px #ccc;
 
     img {
       padding: 2rem;

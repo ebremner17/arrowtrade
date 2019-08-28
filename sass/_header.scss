@@ -8,7 +8,7 @@
 
   &--logo {
     padding: 1rem 0 1rem 1rem;
-    background-color: #eee;
+    background-color: #333;
     text-align: center;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -18,7 +18,7 @@
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     text-align: right;
-    background-color: #eee;
+    background-color: #333;
     padding: 1rem 1rem 1rem 0;
 
     @include large {
@@ -36,7 +36,7 @@
     }
 
     ul.menu a {
-      color: black;
+      color: white;
       text-transform: uppercase;
       font-family: "BureauGrotCond Book",impact,"avenir next condensed heavy","Droid Sans",sans-serif;
       font-size: 1.5rem;
@@ -44,13 +44,17 @@
       padding: 0.5rem;
 
       &:hover {
-        text-decoration: underline;
+        color: gold;
       }
 
       &.is-active {
         background-color: white;
         color: black;
         font-weight: bold;
+
+        &:hover {
+          color: gold;
+        }
       }
     }
   }
