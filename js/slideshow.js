@@ -13,14 +13,12 @@
             settings: {
               slidesToShow: 3,
               slidesToScroll: 1,
-              infinite: true,
-              dots: true
             }
           },
           {
             breakpoint: 797,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
               slidesToScroll: 1
             }
           },
@@ -63,6 +61,14 @@
       }
       // use setTimeout() to execute
       setTimeout(change_background_image, 6000);
+
+      $(window).resize(function () {
+        $('.js-slider').not('.slick-initialized').slick('resize');
+      });
+
+      $(window).on('orientationchange', function () {
+        $('.js-slider').not('.slick-initialized').slick('resize');
+      });
     }
   };
 })(jQuery, Drupal);
