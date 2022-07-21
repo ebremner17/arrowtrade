@@ -1,5 +1,5 @@
 name: Arrowtrade
-type: theme
+type: drupal-theme
 description: Theme for Arrowtrade.
 base theme: olivero
 core_version_requirement: '^9'
