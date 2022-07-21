@@ -1,8 +1,8 @@
 name: Arrowtrade
-type: drupal-theme
+type: theme
 description: Theme for Arrowtrade.
 base theme: olivero
-core_version_requirement: '^9'
+core_version_requirement: ^9
 
 libraries:
   - core/normalize
