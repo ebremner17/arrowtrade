@@ -41,6 +41,8 @@
     grid-column: 1 / 2;
     text-align: center;
     display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 
     @include large {
       grid-row: 1 / 2;

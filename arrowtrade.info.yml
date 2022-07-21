@@ -1,8 +1,8 @@
 name: Arrowtrade
 type: theme
 description: Theme for Arrowtrade.
-base theme: classy
-core: 8.x
+base theme: olivero
+core_version_requirement: '^9'
 
 libraries:
   - core/normalize

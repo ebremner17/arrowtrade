@@ -18,6 +18,17 @@
   }
 
   img {
+    display: block;
     width: 100%;
   }
+}
+
+.arrowtrade {
+  .node .field--type-image {
+    margin: 0;
+  }
+}
+
+.arrowtrade .node .field--type-image {
+  float: none;
 }

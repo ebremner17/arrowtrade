@@ -11,6 +11,7 @@ slideshow:
   js:
     slick/slick.min.js: {}
     js/slideshow.js: {}
+    js/responsive_menu.js: {}
   dependencies:
     - core/jquery
     - core/drupal.ajax
